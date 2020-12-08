@@ -1,0 +1,12 @@
+[Unit]
+Requires=roscore.service
+PartOf=roscore.service
+After=NetworkManager.service time-sync.target roscore.service
+
+[Service]
+Type=Simple
+User=srcc
+ExecStart=/usr/sbin/roslaunch
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source ~/Documents/Livox/ws_livox/devel/setup.sh
+source /etc/ros/env.sh
+export ROS_HOME=$(echo ~srcc/.ros)
+roslaunch livox_mapping mapping_online.launch
+PID=$!
+wait "$PID"
+

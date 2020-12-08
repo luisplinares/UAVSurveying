@@ -1,0 +1,13 @@
+[Unit]
+Requires=roscore.service gsof.service
+PartOf=roscore.service
+After=NetworkManager.service time-sync.target roscore.service gsof.service
+
+[Service]
+Type=Simple
+User=srcc
+ExecStart=/usr/sbin/roslaunch_lidar
+
+[Install]
+WantedBy=multi-user.target
+

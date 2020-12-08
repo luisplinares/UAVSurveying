@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while ! od -x -N 10000 /dev/ttyACM0 > /dev/null 2>&1; do
+	sleep 1;
+done
+
+source ~/Documents/Livox/ws_livox/devel/setup.sh
+source /etc/ros/env.sh
+export ROS_HOME=$(echo ~srcc/.ros)
+roslaunch livox_mapping mapping_online_gsof.launch
+PID=$!
+wait "$PID"

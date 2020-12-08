@@ -1,0 +1,20 @@
+<launch>
+
+  <arg name="rviz" default="false" />
+
+
+  <node pkg="livox_mapping" type="livox_mapping_case" name="livox_mapping_case" output="screen" launch-prefix="gdb -ex run --args">
+    <param name="map_file_path" type="string" value="/media/srcc/PCData" />
+    <param name="publish_freq" type="double" value="20.0"/>
+    <param name="hmiport" type="string" value="/dev/ttyUSB2"/>
+  </node>
+
+  <group if="$(arg rviz)">
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find livox_mapping)/rviz_cfg/livox_mapping.rviz" />
+  </group>
+
+
+
+
+</launch>
+

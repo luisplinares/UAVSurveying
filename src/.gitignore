@@ -1,0 +1,7 @@
+
+# ignore dir or file
+.vscode/
+#whitelist
+
+
+

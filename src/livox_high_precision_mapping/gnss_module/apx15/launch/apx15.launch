@@ -1,0 +1,9 @@
+<launch>
+   <node pkg="apx15" type="apx15_gsof_driver" name="apx15_gsof_driver" output="screen" launch-prefix="gdb -ex run --args">
+     <param name="vnport" value="/dev/ttyUSB1" />
+     <param name="vnbaud" value="921600" />
+     <param name="zedport" value="/dev/ttyACM0" />
+     <param name="zedbaud" value="115200" />
+   </node>
+   
+</launch>
