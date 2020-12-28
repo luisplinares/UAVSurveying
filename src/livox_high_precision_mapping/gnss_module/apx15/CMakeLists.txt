@@ -44,7 +44,7 @@ catkin_package(
 
 
 add_subdirectory(
-  "/home/srcc/Documents/VectorNav/vnproglib-1.1.5.0/cpp" libvncxx
+  "../../../../vnproglib/cpp" libvncxx
 )
 
 ###########
@@ -56,7 +56,7 @@ add_subdirectory(
 # include_directories(include)
 include_directories(include
   ${catkin_INCLUDE_DIRS}
-  "/home/srcc/Documents/VectorNav/vnproglib-1.1.5.0/cpp/include" #vectornav
+  "../../../../vnproglib/cpp/include" #vectornav
 )
 
 
