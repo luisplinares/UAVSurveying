@@ -1,6 +1,6 @@
 # UAV Surveying Project developed in C++
 
-![Alt text](/Screenshot 2020-11-27&#32;171826.png?raw=true "Example Photo")
+![Alt text](Screenshot 2020-11-27&#32;171826.png?raw=true "Example Photo")
 
 Technologies: C++, ROS (Robot Operating System), Catkin.
 
