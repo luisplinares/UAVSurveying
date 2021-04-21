@@ -1,5 +1,7 @@
 # UAV Surveying Project developed in C++
 
+![Alt text](./img.jpg?raw=true "Example Photo")
+
 Technologies: C++, ROS (Robot Operating System), Catkin.
 
 This project integrates Ublox GNSS ZED-F9P, VectorNav VN-200 INS and Livox Horizon LIDAR sensors to do UAV Surveying.
